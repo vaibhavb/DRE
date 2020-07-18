@@ -1,0 +1,47 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.16.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - blue-button > lodash:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-fhir > lodash:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button > blue-button-model > lodash:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button-model > lodash:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button > blue-button-xml > lodash:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button-fhir > lodash:
+        patched: '2020-07-18T21:20:09.980Z'
+  'npm:moment:20160126':
+    - blue-button-gen-fhir > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-fhir > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-generate > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-fhir > blue-button-json2json > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button-json2json > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button-fhir > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button-fhir > blue-button-json2json > blue-button-util > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-generate > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-match > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+    - blue-button-gen-fhir > blue-button > blue-button-xml > moment:
+        patched: '2020-07-18T21:20:09.980Z'
+  'npm:mongoose:20160116':
+    - blue-button-record > mongoose:
+        patched: '2020-07-18T21:20:09.980Z'
+  'npm:ms:20151024':
+    - blue-button-record > mongoose > ms:
+        patched: '2020-07-18T21:20:09.980Z'
